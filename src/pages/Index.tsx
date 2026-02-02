@@ -10,34 +10,78 @@ const Index = () => {
     {
       id: "1",
       title: "Plataforma E-commerce (Mundo Fácil)",
-      description: "API escalável para e-commerce com autenticação JWT, carrinho, pedidos, cache Redis e mensageria com RabbitMQ.",
+      description:
+        "API escalável para e-commerce com autenticação JWT, carrinho, pedidos, cache Redis e mensageria com RabbitMQ.",
       image: "src/assets/mundoFacilEcommece.png",
-      technologies: ["Node.js", "TypeScript", "PostgreSQL", "Redis", "RabbitMQ", "React", "Resend"],
-      gitHubUrl: "https://github.com/kariel-martins/Mundo-Facil"
+      technologies: [
+        "Node.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Redis",
+        "RabbitMQ",
+        "React",
+        "Resend",
+      ],
+      gitHubUrl: "https://github.com/kariel-martins/Mundo-Facil",
     },
     {
       id: "2",
       title: "Plataforma de Enquetes (Dev Saber)",
-      description: "Sistema de criação de enquetes onde usuários podem criar enquetes, acompanhar seus status e responder enquetes criadas por outros usuários.",
+      description:
+        "Sistema de criação de enquetes onde usuários podem criar enquetes, acompanhar seus status e responder enquetes criadas por outros usuários.",
       image: "src/assets/DevSaberAppPoll.png",
-      technologies: ["Node.js", "TypeScript", "PostgreSQL", "Redis", "RabbitMQ", "React", "Resend", "Docker"],
-      gitHubUrl: "https://github.com/kariel-martins/Dev-saber"
+      technologies: [
+        "Node.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Redis",
+        "RabbitMQ",
+        "React",
+        "Resend",
+        "Docker",
+      ],
+      gitHubUrl: "https://github.com/kariel-martins/Dev-saber",
     },
     {
       id: "3",
       title: "API Modular com Clean Architecture (Smart Agenda)",
-      description: "Backend estruturado seguindo princípios SOLID, DDD e separação de camadas.",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80",
-      technologies: ["TypeScript", "PostgreSQL", "Docker", "DDD", "SOLID", "clean architecture"],
-        gitHubUrl: "https://github.com/kariel-martins/smart-agenda-api"
-    }
+      description:
+        "Backend estruturado seguindo princípios SOLID, DDD e separação de camadas.",
+      image:
+        "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80",
+      technologies: [
+        "TypeScript",
+        "PostgreSQL",
+        "Docker",
+        "DDD",
+        "SOLID",
+        "clean architecture",
+      ],
+      gitHubUrl: "https://github.com/kariel-martins/smart-agenda-api",
+    },
   ];
 
   const skills = [
-    { icon: Server, title: "Back-end Engineering", description: "APIs REST, autenticação, arquitetura modular" },
-    { icon: Database, title: "Banco de Dados", description: "PostgreSQL, Redis, modelagem relacional" },
-    { icon: Cloud, title: "Infraestrutura", description: "Docker, containers e ambientes padronizados" },
-    { icon: Cpu, title: "Sistemas Distribuídos", description: "Mensageria, filas, comunicação assíncrona" }
+    {
+      icon: Server,
+      title: "Back-end Engineering",
+      description: "APIs REST, autenticação, arquitetura modular",
+    },
+    {
+      icon: Database,
+      title: "Banco de Dados",
+      description: "PostgreSQL, Redis, modelagem relacional",
+    },
+    {
+      icon: Cloud,
+      title: "Infraestrutura",
+      description: "Docker, containers e ambientes padronizados",
+    },
+    {
+      icon: Cpu,
+      title: "Sistemas Distribuídos",
+      description: "Mensageria, filas, comunicação assíncrona",
+    },
   ];
 
   return (
@@ -51,18 +95,23 @@ const Index = () => {
       <section className="py-32 px-6 relative overflow-hidden border-t border-white/5">
         {/* Background Grid Sutil */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
-        
+
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-[10px] font-mono mb-4 tracking-widest uppercase">
               <Terminal size={12} /> Technical Profile
             </div>
             <h2 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter">
-              ENGENHARIA DE <span className="text-primary cyber-glow italic">SOFTWARE</span>
+              ENGENHARIA DE{" "}
+              <span className="text-primary cyber-glow italic">SOFTWARE</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto font-light">
-              Focado na construção de sistemas robustos e escaláveis. Trabalho com arquitetura moderna, 
-              mensageria e cache, buscando sempre <span className="text-foreground underline decoration-primary/40 text-sm font-mono">alta performance</span> e manutenibilidade em ambientes de produção real.
+              Focado na construção de sistemas robustos e escaláveis. Trabalho
+              com arquitetura moderna, mensageria e cache, buscando sempre{" "}
+              <span className="text-foreground underline decoration-primary/40 text-sm font-mono">
+                alta performance
+              </span>{" "}
+              e manutenibilidade em ambientes de produção real.
             </p>
           </div>
 
@@ -75,9 +124,11 @@ const Index = () => {
               >
                 {/* Linha decorativa de hover */}
                 <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/50 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
-                
+
                 <skill.icon className="w-10 h-10 text-primary/70 mb-6 group-hover:scale-110 group-hover:text-primary transition-all duration-500" />
-                <h3 className="text-sm font-mono font-bold mb-3 tracking-widest uppercase">{skill.title}</h3>
+                <h3 className="text-sm font-mono font-bold mb-3 tracking-widest uppercase">
+                  {skill.title}
+                </h3>
                 <p className="text-xs text-muted-foreground leading-relaxed italic">
                   // {skill.description}
                 </p>
@@ -103,7 +154,10 @@ const Index = () => {
               </p>
             </div>
             <div className="h-[1px] flex-1 bg-white/5 mx-8 hidden lg:block mb-4"></div>
-            <Button variant="outline" className="border-primary/20 hover:bg-primary/10 text-xs font-mono tracking-tighter">
+            <Button
+              variant="outline"
+              className="border-primary/20 hover:bg-primary/10 text-xs font-mono tracking-tighter"
+            >
               EXPLORE_ALL_REPOS
             </Button>
           </div>
@@ -116,8 +170,13 @@ const Index = () => {
 
           {/* Call to action final */}
           <div className="mt-24 text-center p-12 rounded-3xl border border-dashed border-white/10 bg-white/[0.01]">
-            <h3 className="text-xl font-mono mb-6">Pronto para escalar seu próximo projeto?</h3>
-            <Button size="lg" className="bg-primary text-black font-bold gap-2 hover:shadow-[0_0_20px_rgba(var(--primary),0.5)]">
+            <h3 className="text-xl font-mono mb-6">
+              Pronto para escalar seu próximo projeto?
+            </h3>
+            <Button
+              size="lg"
+              className="bg-primary text-black font-bold gap-2 hover:shadow-[0_0_20px_rgba(var(--primary),0.5)]"
+            >
               <Github size={18} /> INICIAR_CONVERSA
             </Button>
           </div>

@@ -14,7 +14,8 @@ const Projects = () => {
       description: "Infraestrutura escalável com processamento de pagamentos assíncrono e gestão de inventário em tempo real.",
       image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80",
       technologies: ["Node.js", "PostgreSQL", "Redis", "RabbitMQ"],
-      category: "BACKEND"
+      category: "BACKEND",
+      gitHubUrl: ""
     },
     {
       id: "2",
@@ -22,7 +23,8 @@ const Projects = () => {
       description: "Sistema de microserviços focado em processamento de logs e tarefas pesadas em background utilizando filas distribuídas.",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
       technologies: ["Go", "Docker", "RabbitMQ", "MongoDB"],
-      category: "INFRA"
+      category: "INFRA",
+      gitHubUrl: ""
     },
     {
       id: "3",
@@ -30,7 +32,8 @@ const Projects = () => {
       description: "Boilerplate de arquitetura limpa (Clean Arch) com DDD e SOLID para aplicações TypeScript robustas.",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80",
       technologies: ["TypeScript", "Jest", "Docker"],
-      category: "ARCHITECTURE"
+      category: "ARCHITECTURE",
+      gitHubUrl: ""
     },
     {
       id: "4",
@@ -38,7 +41,8 @@ const Projects = () => {
       description: "Serviço centralizado de autenticação e autorização com suporte a OAuth2 e múltiplas estratégias de JWT.",
       image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&w=800&q=80",
       technologies: ["Node.js", "Redis", "Security"],
-      category: "BACKEND"
+      category: "BACKEND",
+      gitHubUrl: ""
     }
   ];
 
