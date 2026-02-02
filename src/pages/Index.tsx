@@ -9,24 +9,27 @@ const Index = () => {
   const projects = [
     {
       id: "1",
-      title: "Plataforma E-commerce Backend",
+      title: "Plataforma E-commerce (Mundo Fácil)",
       description: "API escalável para e-commerce com autenticação JWT, carrinho, pedidos, cache Redis e mensageria com RabbitMQ.",
-      image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80",
-      technologies: ["Node.js", "TypeScript", "PostgreSQL", "Redis", "RabbitMQ"]
+      image: "src/assets/mundoFacilEcommece.png",
+      technologies: ["Node.js", "TypeScript", "PostgreSQL", "Redis", "RabbitMQ", "React", "Resend"],
+      gitHubUrl: "https://github.com/kariel-martins/Mundo-Facil"
     },
     {
       id: "2",
-      title: "Sistema de Processamento Assíncrono",
-      description: "Sistema orientado a eventos utilizando filas para processamento de tarefas em background.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
-      technologies: ["Node.js", "RabbitMQ", "Docker", "Redis"]
+      title: "Plataforma de Enquetes (Dev Saber)",
+      description: "Sistema de criação de enquetes onde usuários podem criar enquetes, acompanhar seus status e responder enquetes criadas por outros usuários.",
+      image: "src/assets/DevSaberAppPoll.png",
+      technologies: ["Node.js", "TypeScript", "PostgreSQL", "Redis", "RabbitMQ", "React", "Resend", "Docker"],
+      gitHubUrl: "https://github.com/kariel-martins/Dev-saber"
     },
     {
       id: "3",
-      title: "API Modular com Clean Architecture",
+      title: "API Modular com Clean Architecture (Smart Agenda)",
       description: "Backend estruturado seguindo princípios SOLID, DDD e separação de camadas.",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80",
-      technologies: ["TypeScript", "PostgreSQL", "Docker"]
+      technologies: ["TypeScript", "PostgreSQL", "Docker", "DDD", "SOLID", "clean architecture"],
+        gitHubUrl: "https://github.com/kariel-martins/smart-agenda-api"
     }
   ];
 
