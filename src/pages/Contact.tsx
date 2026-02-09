@@ -72,7 +72,7 @@ const Contato = () => {
                   {/* Linha de progresso no topo do card */}
                   <div className={`absolute top-0 left-0 h-[2px] bg-primary transition-all duration-500 ${isFormValid ? 'w-full shadow-[0_0_10px_#var(--primary)]' : 'w-0'}`} />
 
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form action="https://formspree.io/f/mwvnpakn" onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="nome" className="text-[10px] font-mono uppercase tracking-[0.2em] text-muted-foreground pl-1">Input.User_Name</Label>

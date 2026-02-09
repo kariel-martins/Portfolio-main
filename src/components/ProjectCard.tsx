@@ -11,6 +11,7 @@ interface ProjectCardProps {
   technologies: string[];
   id: string;
   gitHubUrl: string;
+  DemoUrl: string;
 }
 
 const ProjectCard = ({
@@ -19,7 +20,8 @@ const ProjectCard = ({
   image,
   technologies,
   id,
-  gitHubUrl
+  gitHubUrl,
+  DemoUrl,
 }: ProjectCardProps) => {
   return (
     <Card className="group cyber-border overflow-hidden bg-card/50 backdrop-blur-sm hover:bg-card/80 transition-all duration-500 animate-fade-in-up">
@@ -61,10 +63,12 @@ const ProjectCard = ({
                 Código
               </Button>
             </Link>
-            <Button variant="outline" size="sm" className="purple-glow">
-              <ExternalLink className="w-4 h-4 mr-2" />
-              Demo
-            </Button>
+            <Link to={DemoUrl}>
+              <Button variant="outline" size="sm" className="purple-glow">
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Demo
+              </Button>
+            </Link>
           </div>
 
           <Link to={`/sobre#projeto-${id}`}>

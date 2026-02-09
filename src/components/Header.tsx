@@ -64,13 +64,15 @@ const Header = () => {
 
             {/* AÇÕES E BOTÃO CV */}
             <div className="flex items-center gap-4">
-              <Button
-                variant="outline"
-                className="hidden sm:flex border-primary/20 bg-primary/5 hover:bg-primary hover:text-black font-mono text-[10px] tracking-widest gap-2 transition-all"
-              >
-                <FileDown size={14} />
-                GET_CV.PDF
-              </Button>
+              <Link to="https://resume-kariel.vercel.app/cv.html">
+                <Button
+                  variant="outline"
+                  className="hidden sm:flex border-primary/20 bg-primary/5 hover:bg-primary hover:text-black font-mono text-[10px] tracking-widest gap-2 transition-all"
+                >
+                  <FileDown size={14} />
+                  GET_CV.PDF
+                </Button>
+              </Link>
 
               {/* Mobile Menu Icon */}
               <button
@@ -79,42 +81,41 @@ const Header = () => {
               >
                 <Menu size={24} />
               </button>
-          
             </div>
           </nav>
         </div>
 
         {/* Linha de acento animada no fundo do header */}
         <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
-            {/* MENU MOBILE */}
-              {mobileOpen && (
-                <div className="md:hidden bg-background/95 backdrop-blur-xl border-t border-white/10">
-                  <div className="flex flex-col p-6 space-y-4">
-                    {navLinks.map((link) => (
-                      <Link
-                        key={link.path}
-                        to={link.path}
-                        onClick={() => setMobileOpen(false)}
-                        className={`text-sm font-mono tracking-widest ${
-                          isActive(link.path)
-                            ? "text-primary"
-                            : "text-muted-foreground"
-                        }`}
-                      >
-                        {isActive(link.path) ? `[ ${link.name} ]` : link.name}
-                      </Link>
-                    ))}
+        {/* MENU MOBILE */}
+        {mobileOpen && (
+          <div className="md:hidden bg-background/95 backdrop-blur-xl border-t border-white/10">
+            <div className="flex flex-col p-6 space-y-4">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  onClick={() => setMobileOpen(false)}
+                  className={`text-sm font-mono tracking-widest ${
+                    isActive(link.path)
+                      ? "text-primary"
+                      : "text-muted-foreground"
+                  }`}
+                >
+                  {isActive(link.path) ? `[ ${link.name} ]` : link.name}
+                </Link>
+              ))}
 
-                    <Button
-                      variant="outline"
-                      className="border-primary/20 bg-primary/5 hover:bg-primary hover:text-black font-mono text-[10px] tracking-widest gap-2"
-                    >
-                      <FileDown size={14} />
-                      GET_CV.PDF
-                    </Button>
-                  </div>
-                </div>
-              )}
+              <Button
+                variant="outline"
+                className="border-primary/20 bg-primary/5 hover:bg-primary hover:text-black font-mono text-[10px] tracking-widest gap-2"
+              >
+                <FileDown size={14} />
+                GET_CV.PDF
+              </Button>
+            </div>
+          </div>
+        )}
       </div>
     </header>
   );

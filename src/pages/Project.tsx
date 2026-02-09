@@ -3,46 +3,75 @@ import Header from "@/components/Header";
 import ProjectCard from "@/components/ProjectCard";
 import { Button } from "@/components/ui/button";
 import {  Terminal, Cpu, Database, Globe } from "lucide-react";
+import cloneAmazon from "@/assets/imageCloneAmazon.png"
+import TechShop from "@/assets/TechShop.png"
+import mundoFacil from "@/assets/mundoFacilEcommece.png"
+import devSaber from "@/assets/DevSaberAppPoll.png"
+import Emdesenvolvimento from "@/assets/emDesenvolvimento.png"
 
 const Projects = () => {
   const [filter, setFilter] = useState("ALL");
 
   const projects = [
     {
-      id: "1",
-      title: "E-commerce Engine",
-      description: "Infraestrutura escalável com processamento de pagamentos assíncrono e gestão de inventário em tempo real.",
-      image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80",
-      technologies: ["Node.js", "PostgreSQL", "Redis", "RabbitMQ"],
-      category: "BACKEND",
-      gitHubUrl: ""
-    },
-    {
-      id: "2",
-      title: "Event-Driven Worker",
-      description: "Sistema de microserviços focado em processamento de logs e tarefas pesadas em background utilizando filas distribuídas.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
-      technologies: ["Go", "Docker", "RabbitMQ", "MongoDB"],
+      id: "5",
+      title: "Api Marketplace de servicos ",
+      description: "API REST voltada à prestação de serviços por profissionais autônomos. O projeto utiliza autenticação com JWT e adota arquitetura em camadas, modularização por domínio e separação de responsabilidades, aplicando boas práticas de desenvolvimento com foco em organização, manutenibilidade e escalabilidade do sistema.",
+      image: Emdesenvolvimento,
+      technologies: ["Typescript", "Nodejs", "swagger", "test", "Docker", "Postgres", "jwt", "fastify"],
       category: "INFRA",
-      gitHubUrl: ""
+      gitHubUrl: "https://github.com/kariel-martins/smart-agenda-api",
+      DemoUrl: ""
     },
     {
-      id: "3",
-      title: "Clean API Architecture",
-      description: "Boilerplate de arquitetura limpa (Clean Arch) com DDD e SOLID para aplicações TypeScript robustas.",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80",
-      technologies: ["TypeScript", "Jest", "Docker"],
-      category: "ARCHITECTURE",
-      gitHubUrl: ""
+      id: "5",
+      title: "Api Smart Agenda",
+      description: "API REST para gerenciamento inteligente de agendamentos, criada para organizar atendimentos em estabelecimentos de serviços. O projeto aplica autenticação com JWT, arquitetura em camadas, modularização por domínio, separação de responsabilidades e boas práticas de desenvolvimento, com foco em escalabilidade e organização do sistema.",
+      image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80",
+      technologies: ["Typescript", "Nodejs", "swagger", "test", "Docker", "Postgres", "jwt"],
+      category: "INFRA",
+      gitHubUrl: "https://github.com/kariel-martins/smart-agenda-api",
+      DemoUrl: ""
     },
     {
       id: "4",
-      title: "Auth Gateway Service",
-      description: "Serviço centralizado de autenticação e autorização com suporte a OAuth2 e múltiplas estratégias de JWT.",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&w=800&q=80",
-      technologies: ["Node.js", "Redis", "Security"],
+      title: "Dev Saber",
+      description: "Aplicação web na qual usuários podem criar enquetes, acompanhar seus status e responder enquetes criadas por outros usuários. O projeto utiliza autenticação com JWT e cookies, além de aplicar conceitos de DDD, Clean Architecture e princípios SOLID.",
+      image: devSaber,
+      technologies: ["Typescript", "Docker", "RabbitMQ", "Postgres", "Redis", "React", "vite", "Resend", "jwt", "git", "git flow"],
+      category: "INFRA",
+      gitHubUrl: "https://github.com/kariel-martins/Dev-saber",
+      DemoUrl: ""
+    },
+    {
+      id: "3",
+      title: "Mundo Fácil",
+      description: "E-commerce desenvolvido com o propósito de tornar a conexão entre cliente e vendedor mais simples, prática e acessível. A plataforma busca oferecer uma experiência de compra intuitiva e eficiente, facilitando tanto o processo de venda quanto a jornada de compra do usuário.",
+      image: mundoFacil,
+      technologies: ["Typescript", "Docker", "RabbitMQ", "Postgres", "Redis","strype", "React", "vite", "Resend"],
+      category: "INFRA",
+      gitHubUrl: "https://github.com/kariel-martins/Mundo-Facil",
+      DemoUrl: "https://mundo-facil.onrender.com"
+    },
+    {
+      id: "2",
+      title: "Tech Shop",
+      description: "Projeto de e-commerce voltado ao desenvolvimento da minha lógica de programação e ao aprofundamento dos conhecimentos em arquitetura de software. Trata-se de um dos meus primeiros projetos, no qual aplico conceitos como API REST, organização arquitetural e divisão de responsabilidades.",
+      image: TechShop,
+      technologies: ["TypeScript", "Nodejs", "Docker", "React", "postgres"],
+      category: "ARCHITECTURE",
+      gitHubUrl: "https://github.com/kariel-martins/TechShop",
+      DemoUrl: ""
+    },
+    {
+      id: "1",
+      title: "Clone Amazon",
+      description: "Site clone da amazon feito para demostrar minhas capacidade com HTML, CSS, JavaScript. Esse projeto foi desenvolvido ainda no inicio do meu estudos, Sendo um dos meu primeiros projetos.",
+      image: cloneAmazon,
+      technologies: ["HTML", "CSS", "javaScript"],
       category: "BACKEND",
-      gitHubUrl: ""
+      gitHubUrl: "https://github.com/kariel-martins/clone-Amazon",
+      DemoUrl: "https://cloneamazonkariel.netlify.app/"
     }
   ];
 

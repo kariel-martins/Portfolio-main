@@ -4,6 +4,8 @@ import ProjectCard from "@/components/ProjectCard";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Server, Database, Cloud, Cpu, Terminal, Github } from "lucide-react";
+import mundoFacil  from "@/assets/mundoFacilEcommece.png"
+import devSaber  from "@/assets/DevSaberAppPoll.png"
 
 const Index = () => {
   const projects = [
@@ -12,7 +14,7 @@ const Index = () => {
       title: "Plataforma E-commerce (Mundo Fácil)",
       description:
         "API escalável para e-commerce com autenticação JWT, carrinho, pedidos, cache Redis e mensageria com RabbitMQ.",
-      image: "src/assets/mundoFacilEcommece.png",
+      image: mundoFacil,
       technologies: [
         "Node.js",
         "TypeScript",
@@ -23,13 +25,14 @@ const Index = () => {
         "Resend",
       ],
       gitHubUrl: "https://github.com/kariel-martins/Mundo-Facil",
+      DemoUrl: ""
     },
     {
       id: "2",
       title: "Plataforma de Enquetes (Dev Saber)",
       description:
         "Sistema de criação de enquetes onde usuários podem criar enquetes, acompanhar seus status e responder enquetes criadas por outros usuários.",
-      image: "src/assets/DevSaberAppPoll.png",
+      image: devSaber,
       technologies: [
         "Node.js",
         "TypeScript",
@@ -41,6 +44,7 @@ const Index = () => {
         "Docker",
       ],
       gitHubUrl: "https://github.com/kariel-martins/Dev-saber",
+      DemoUrl: ""
     },
     {
       id: "3",
@@ -58,6 +62,7 @@ const Index = () => {
         "clean architecture",
       ],
       gitHubUrl: "https://github.com/kariel-martins/smart-agenda-api",
+      DemoUrl: ""
     },
   ];
 
