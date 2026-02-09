@@ -1,31 +1,67 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, MapPin, Target, Zap, Code2, Database, Monitor, Terminal, FileCode } from "lucide-react";
+import {
+  Calendar,
+  MapPin,
+  Target,
+  Zap,
+  Code2,
+  Database,
+  Monitor,
+  Terminal,
+  FileCode,
+} from "lucide-react";
 import Header from "@/components/Header";
+import { Link } from "react-router-dom";
 
 const Sobre = () => {
-
   const technologies = [
-    { name: "Node.js", description: "Criação de APIs REST escaláveis", icon: Code2 },
-    { name: "TypeScript", description: "Tipagem estática e segurança", icon: FileCode },
-    { name: "PostgreSQL", description: "Banco relacional robusto", icon: Database },
-    { name: "Redis", description: "Cache distribuído e performance", icon: Zap },
-    { name: "RabbitMQ", description: "Mensageria e filas assíncronas", icon: Terminal },
-    { name: "Docker", description: "Containers e deploy padronizado", icon: Monitor }
+    {
+      name: "Node.js",
+      description: "Criação de APIs REST escaláveis",
+      icon: Code2,
+    },
+    {
+      name: "TypeScript",
+      description: "Tipagem estática e segurança",
+      icon: FileCode,
+    },
+    {
+      name: "PostgreSQL",
+      description: "Banco relacional robusto",
+      icon: Database,
+    },
+    {
+      name: "Redis",
+      description: "Cache distribuído e performance",
+      icon: Zap,
+    },
+    {
+      name: "RabbitMQ",
+      description: "Mensageria e filas assíncronas",
+      icon: Terminal,
+    },
+    {
+      name: "Docker",
+      description: "Containers e deploy padronizado",
+      icon: Monitor,
+    },
   ];
 
   const objectives = [
     {
       icon: Target,
       title: "CURTO_PRAZO",
-      description: "Atuar como desenvolvedor back-end focado em boas práticas, arquitetura limpa e padrões modernos em projetos reais."
+      description:
+        "Atuar como desenvolvedor back-end focado em boas práticas, arquitetura limpa e padrões modernos em projetos reais.",
     },
     {
       icon: Zap,
       title: "LONGO_PRAZO",
-      description: "Especializar-me em sistemas distribuídos, cloud computing e arquitetura de alto impacto e disponibilidade."
-    }
+      description:
+        "Especializar-me em sistemas distribuídos, cloud computing e arquitetura de alto impacto e disponibilidade.",
+    },
   ];
 
   return (
@@ -63,27 +99,49 @@ const Sobre = () => {
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-primary/10 border border-primary/20 text-primary text-[10px] font-mono tracking-widest uppercase">
                   Active_Instance_v1.0
                 </div>
-                <h2 className="text-3xl font-bold tracking-tight">Plataforma Backend Escalável</h2>
+                <h2 className="text-3xl font-bold tracking-tight">
+                  Plataforma Backend Escalável
+                </h2>
                 <p className="text-muted-foreground leading-relaxed font-light">
-                  API REST desenvolvida com foco em performance e resiliência. Implementação de
-                  <span className="text-foreground"> arquitetura limpa</span> para facilitar a manutenção e escalabilidade horizontal.
+                  API REST desenvolvida com foco em performance e resiliência.
+                  Implementação de
+                  <span className="text-foreground">
+                    {" "}
+                    arquitetura limpa
+                  </span>{" "}
+                  para facilitar a manutenção e escalabilidade.
                 </p>
 
                 <div className="flex flex-wrap gap-2">
-                  {["Node.js", "TypeScript", "PostgreSQL", "Redis", "Docker"].map((tech) => (
-                    <Badge key={tech} variant="outline" className="border-white/10 text-[10px] font-mono uppercase bg-white/5">
+                  {[
+                    "Node.js",
+                    "TypeScript",
+                    "PostgreSQL",
+                    "Redis",
+                    "Docker",
+                  ].map((tech) => (
+                    <Badge
+                      key={tech}
+                      variant="outline"
+                      className="border-white/10 text-[10px] font-mono uppercase bg-white/5"
+                    >
                       {tech}
                     </Badge>
                   ))}
                 </div>
 
                 <div className="flex gap-4 pt-4">
-                  <Button className="bg-primary text-black font-bold hover:shadow-[0_0_15px_rgba(var(--primary),0.4)]">
+                  <Button className="bg-primary text-gray-600 font-bold hover:shadow-[0_0_15px_rgba(var(--primary),0.4)]">
                     DOCUMENTATION
                   </Button>
-                  <Button variant="outline" className="border-white/10 hover:bg-white/5 font-mono">
-                    REPOSITORY
-                  </Button>
+                  <Link to="https://github.com/kariel-martins/smart-agenda-api">
+                    <Button
+                      variant="outline"
+                      className="border-white/10 hover:bg-white/5 font-mono"
+                    >
+                      REPOSITORY
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -92,20 +150,34 @@ const Sobre = () => {
             <div className="mt-12">
               <Card className="p-8 border-white/5 bg-white/[0.02] backdrop-blur-md relative overflow-hidden group">
                 <div className="absolute top-0 left-0 w-1 h-full bg-primary/50 group-hover:h-full transition-all"></div>
-                <h3 className="text-sm font-mono font-bold mb-6 text-primary tracking-[0.3em] uppercase">Context_&_Challenges</h3>
-                
+                <h3 className="text-sm font-mono font-bold mb-6 text-primary tracking-[0.3em] uppercase">
+                  Context_&_Challenges
+                </h3>
+
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm font-mono">
                   <div className="space-y-2">
-                    <span className="text-white/40 uppercase text-[10px] tracking-widest">01. Contexto</span>
-                    <p className="text-muted-foreground">// Simulação de ambiente real de produção com alta carga.</p>
+                    <span className="text-white/40 uppercase text-[10px] tracking-widest">
+                      01. Contexto
+                    </span>
+                    <p className="text-muted-foreground">
+                      // Simulação de ambiente real de produção com alta carga.
+                    </p>
                   </div>
                   <div className="space-y-2">
-                    <span className="text-white/40 uppercase text-[10px] tracking-widest">02. Objetivos</span>
-                    <p className="text-muted-foreground">// API desacoplada, resiliente com cache e mensageria.</p>
+                    <span className="text-white/40 uppercase text-[10px] tracking-widest">
+                      02. Objetivos
+                    </span>
+                    <p className="text-muted-foreground">
+                      // API desacoplada, resiliente com cache e mensageria.
+                    </p>
                   </div>
                   <div className="space-y-2">
-                    <span className="text-white/40 uppercase text-[10px] tracking-widest">03. Desafios</span>
-                    <p className="text-muted-foreground">// Otimização de SQL, controle de filas e Dockerização.</p>
+                    <span className="text-white/40 uppercase text-[10px] tracking-widest">
+                      03. Desafios
+                    </span>
+                    <p className="text-muted-foreground">
+                      // Otimização de SQL, controle de filas e Dockerização.
+                    </p>
                   </div>
                 </div>
               </Card>
@@ -126,7 +198,8 @@ const Sobre = () => {
                   </div>
                   <div className="absolute -bottom-4 -right-4 bg-[#0a0a0a] border border-primary/30 p-3 rounded-lg shadow-xl">
                     <div className="flex items-center gap-2 font-mono text-[10px] text-primary">
-                      <span className="flex h-2 w-2 rounded-full bg-green-500"></span> ONLINE
+                      <span className="flex h-2 w-2 rounded-full bg-green-500"></span>{" "}
+                      ONLINE
                     </div>
                   </div>
                 </div>
@@ -138,21 +211,30 @@ const Sobre = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed font-light">
                   <p>
-                    Sou desenvolvedor Back-end focado na criação de <span className="text-foreground font-medium">APIs modernas</span>,
-                    sistemas escaláveis e arquitetura bem estruturada.
+                    Sou desenvolvedor Back-end focado na criação de{" "}
+                    <span className="text-foreground font-medium">
+                      APIs modernas
+                    </span>
+                    , sistemas escaláveis e arquitetura bem estruturada.
                   </p>
                   <p>
-                    Especialista em ecossistema <span className="text-primary/80 font-mono">Node.js/TypeScript</span>,
-                    gerenciando dados com PostgreSQL e Redis, e orquestrando fluxos com RabbitMQ.
+                    Especialista em ecossistema{" "}
+                    <span className="text-primary/80 font-mono">
+                      Node.js/TypeScript
+                    </span>
+                    , gerenciando dados com PostgreSQL e Redis, e orquestrando
+                    fluxos com RabbitMQ.
                   </p>
                 </div>
 
                 <div className="flex flex-wrap gap-6 pt-4 text-[11px] font-mono uppercase tracking-widest opacity-70">
                   <div className="flex items-center gap-2">
-                    <MapPin size={14} className="text-primary" /> Brasil / Remote
+                    <MapPin size={14} className="text-primary" /> Brasil /
+                    Remote
                   </div>
                   <div className="flex items-center gap-2">
-                    <Calendar size={14} className="text-primary" /> Continuous_Learning
+                    <Calendar size={14} className="text-primary" />{" "}
+                    Continuous_Learning
                   </div>
                 </div>
               </div>
@@ -179,7 +261,9 @@ const Sobre = () => {
                   className="p-6 border-white/5 bg-white/[0.02] hover:border-primary/40 hover:bg-primary/[0.01] transition-all duration-500 group"
                 >
                   <tech.icon className="w-8 h-8 text-primary/50 mb-4 group-hover:text-primary group-hover:scale-110 transition-all" />
-                  <h3 className="text-sm font-mono font-bold mb-2 tracking-widest uppercase">{tech.name}</h3>
+                  <h3 className="text-sm font-mono font-bold mb-2 tracking-widest uppercase">
+                    {tech.name}
+                  </h3>
                   <p className="text-xs text-muted-foreground leading-relaxed font-light italic">
                     {tech.description}
                   </p>

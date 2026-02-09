@@ -45,9 +45,9 @@ const HeroSection = () => {
           {/* Social Links Estilizados */}
           <div className="flex items-center gap-4">
             {[
-              { icon: Github, href: "#" },
-              { icon: Linkedin, href: "#" },
-              { icon: Mail, href: "#" }
+              { icon: Github, href: "https://github.com/kariel-martins" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/kariel-martins" },
+              { icon: Mail, href: "karielemanoelsilvamartins@gmail.com" }
             ].map((social, i) => (
               <a 
                 key={i} 
