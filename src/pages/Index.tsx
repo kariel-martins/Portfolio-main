@@ -6,11 +6,29 @@ import { Card } from "@/components/ui/card";
 import { Server, Database, Cloud, Cpu, Terminal, Github } from "lucide-react";
 import mundoFacil  from "@/assets/mundoFacilEcommece.png"
 import devSaber  from "@/assets/DevSaberAppPoll.png"
+import smartAgenda from "@/assets/smartAgenda.png"
 
 const Index = () => {
   const projects = [
-    {
+      {
       id: "1",
+      title: "Sistema de agendamento (Smart Agenda)",
+      description:
+        "Plataforma online de agendamento e controle de fluxo, voltada para pequenas e médias empresas. Permite organizar atendimentos, gerenciar horários e melhorar a eficiência operacional, reduzindo filas e evitando conflitos de agenda.",
+      image: smartAgenda,
+      technologies: [
+        "TypeScript",
+        "PostgreSQL",
+        "Docker",
+        "DDD",
+        "SOLID",
+        "clean architecture",
+      ],
+      gitHubUrl: "https://github.com/kariel-martins/smart-agenda-api",
+      DemoUrl: ""
+    },
+    {
+      id: "2",
       title: "Plataforma E-commerce (Mundo Fácil)",
       description:
         "API escalável para e-commerce com autenticação JWT, carrinho, pedidos, cache Redis e mensageria com RabbitMQ.",
@@ -28,7 +46,7 @@ const Index = () => {
       DemoUrl: ""
     },
     {
-      id: "2",
+      id: "3",
       title: "Plataforma de Enquetes (Dev Saber)",
       description:
         "Sistema de criação de enquetes onde usuários podem criar enquetes, acompanhar seus status e responder enquetes criadas por outros usuários.",
@@ -46,24 +64,7 @@ const Index = () => {
       gitHubUrl: "https://github.com/kariel-martins/Dev-saber",
       DemoUrl: ""
     },
-    {
-      id: "3",
-      title: "API Modular com Clean Architecture (Smart Agenda)",
-      description:
-        "Backend estruturado seguindo princípios SOLID, DDD e separação de camadas.",
-      image:
-        "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80",
-      technologies: [
-        "TypeScript",
-        "PostgreSQL",
-        "Docker",
-        "DDD",
-        "SOLID",
-        "clean architecture",
-      ],
-      gitHubUrl: "https://github.com/kariel-martins/smart-agenda-api",
-      DemoUrl: ""
-    },
+  
   ];
 
   const skills = [
